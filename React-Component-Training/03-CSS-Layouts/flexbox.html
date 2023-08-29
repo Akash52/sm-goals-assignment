@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Example</title>
+    <style>
+      .box-blue {
+        background-color: blueviolet;
+      }
+      .box-orange {
+        background-color: orangered;
+      }
+      .box-green {
+        background-color: green;
+        height: 150px;
+      }
+      .box-yellow {
+        background-color: yellow;
+      }
+      .box-red {
+        background-color: crimson;
+      }
+      .box-pink {
+        background-color: palevioletred;
+      }
+      .box-gold {
+        background-color: goldenrod;
+      }
+      .box-blue-dark {
+        background-color: steelblue;
+      }
+
+      /* CSS for container and element styling */
+      .container {
+        font-family: sans-serif;
+        background-color: #ddd;
+        font-size: 40px;
+        margin: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+      }
+
+      /* Flexbox properties */
+      .box {
+        flex-grow: 1;
+        flex-shrink: 0;
+      }
+
+      /* Specific styling for individual elements */
+      .box-blue {
+        align-self: flex-start;
+      }
+      .box-pink {
+        align-self: stretch;
+        order: 1;
+        flex-grow: 2;
+      }
+      .box-blue-dark {
+        order: -1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box-blue">HTML</div>
+      <div class="box box-orange">and</div>
+      <div class="box box-green">CSS</div>
+      <div class="box box-gold">are</div>
+      <div class="box box-pink">amazing</div>
+      <div class="box box-blue-dark">languages</div>
+      <div class="box box-yellow">to</div>
+      <div class="box box-red">learn</div>
+    </div>
+  </body>
+</html>
